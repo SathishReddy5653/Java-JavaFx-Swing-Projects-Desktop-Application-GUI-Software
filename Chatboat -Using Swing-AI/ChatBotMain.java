@@ -127,10 +127,10 @@ public class ChatBotMain extends JFrame {
 			textArea.setText("");
 			textField_1.setText("");
 		}
-		else if(query.contains("hi")||query.contains("hey")||query.contains("hola")||query.contains("hello"))
+		else if(query.contains("hi")||query.contains("hey")||query.contains("hola")||query.contains("hello") || query.contails("hey whats up")
 		{
 			Random rand=new Random();
-			int a=rand.nextInt(4);
+			int a=rand.nextInt(5);
 			if(a==0)
 			{
 				ai("Hey,I'm Here");
@@ -150,6 +150,10 @@ public class ChatBotMain extends JFrame {
 			else if(a==4)
 			{
 				ai("Hello,How u doing?");
+			}
+			else if(a==5)
+			{
+				ai("Hello,How u doing? whats up");
 			}
 			
 		}
